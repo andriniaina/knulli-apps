@@ -1,0 +1,13 @@
+exec = /bin/bash
+date
+.INSTALL_START
+    echo "Installing..."
+        
+    echo 'export PATH="/userdata/system/zsh/bin:$PATH"' >> ~/.bashrc
+    chown $(whoami) /userdata/system/.oh-my-zsh/cache
+    chown $(whoami) /userdata/system/.oh-my-zsh/custom
+
+.INSTALL_END
+.UNINSTALL_START
+    echo "Uninstalling..."
+.UNINSTALL_END

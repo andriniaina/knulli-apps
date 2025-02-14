@@ -1,4 +1,4 @@
 #!/bin/bash
-echo 'export PATH="/userdata/system/zsh/bin:$PATH"' >> ~/.bash_profile
+echo 'export PATH="/userdata/system/zsh/bin:$PATH"' >> ~/.bashrc
 chown $(whoami) /userdata/system/.oh-my-zsh/cache
 chown $(whoami) /userdata/system/.oh-my-zsh/custom

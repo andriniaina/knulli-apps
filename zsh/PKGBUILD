@@ -21,4 +21,10 @@ package() {
     # --- .zshrc
     cp ../.zshrc userdata/system
 
+    # --- .BATOEXEC
+    mkdir -p userdata/system/pacman/batoexec
+    cp ../.BATOEXEC userdata/system/pacman/batoexec/BATOEXEC
+
+    # --- 
+    mv userdata $pkgdir
 }
