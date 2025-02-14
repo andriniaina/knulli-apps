@@ -1,0 +1,16 @@
+# Edit on github: https://github.com/LizardByte/Sunshine/blob/master/packaging/linux/Arch/PKGBUILD
+# Reference: https://wiki.archlinux.org/title/PKGBUILD
+
+VERSION=${VERSION:-1.0}
+arch=('any')
+pkgname='trimui_sharp_led'
+pkgdesc="a LED controller for Trimui Smart Pro, focused on performance"
+pkgrel=1
+pkgver=$VERSION
+echo ${pkgver}
+
+package() {
+    echo $PWD
+    cp -R ../files/* $pkgdir
+    ls -latr
+}

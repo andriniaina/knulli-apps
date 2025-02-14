@@ -4,17 +4,12 @@
 VERSION=${VERSION:-1.0}
 arch=('any')
 pkgname='zsh'
-pkgdesc="zsh shell"
+pkgdesc="zsh shell, bundled with oh-my-zsh"
 pkgrel=1
 pkgver=$VERSION
 echo ${pkgver}
 
-build () {
-    tar xvf ../zsh.txz # --directory $pkgdir
-    chmod 775 $PWD
-}
 package() {
     echo $PWD
-    cp -R $srcdir/* $pkgdir
-    #rm -rf pkg
+    tar xvf ../zsh.txz # --directory $pkgdir
 }
