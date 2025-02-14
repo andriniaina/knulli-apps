@@ -15,15 +15,18 @@ And then run `pacman -Sy`
 
 # Packages
 
-List repo packages:
+## Using knulli
+
+go to Knulli EmulationstationMenu *> Updates & Downloads > Content Downloader*
+
+
+## Using command-line
+
 ```bash
+# List repo packages:
 pacman -Sl knulli-pacman-repo
-```
-
-Install a package:
-
-```bash
+# Install a package:
 pacman -S <package-name>
 ```
 
-**Note:** Some packages here are installed in `/`. Changes to the system disk are not automatically persisted in Knulli. You will need to call `batocera-save-overlay` to persist your changes.
+**Note:** Some packages here are installed in `/`. Changes to the system disk are not automatically persisted in Knulli. For thos specific packages, you will need to call `batocera-save-overlay` to persist your changes.
