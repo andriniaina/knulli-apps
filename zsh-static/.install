@@ -1,0 +1,3 @@
+echo 'export PATH="/userdata/system/zsh/bin:$PATH"' >> ~/.bash_profile
+chown $(whoami) /userdata/system/.oh-my-zsh/cache
+chown $(whoami) /userdata/system/.oh-my-zsh/custom
