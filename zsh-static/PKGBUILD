@@ -1,9 +1,9 @@
 # Edit on github: https://github.com/LizardByte/Sunshine/blob/master/packaging/linux/Arch/PKGBUILD
 # Reference: https://wiki.archlinux.org/title/PKGBUILD
 
-VERSION=${VERSION:-1.0}
+VERSION=${VERSION:-5.8}
 arch=('any')
-pkgname='zsh'
+pkgname='zsh-static'
 pkgdesc="zsh shell, portable (static compilation), completion doesn't work as good as the other one, but persists after a reboot"
 pkgrel=1
 pkgver=$VERSION

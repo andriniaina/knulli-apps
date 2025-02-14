@@ -1,5 +1,6 @@
+#!/usr/bin/bash
 
-packages=("zsh" "trimui_sharp_led")
+packages=("zsh" "zsh-static" "trimui_sharp_led")
 
 for dir in "${packages[@]}"; do
 echo $dir

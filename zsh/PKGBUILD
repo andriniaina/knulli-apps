@@ -1,0 +1,24 @@
+# Edit on github: https://github.com/LizardByte/Sunshine/blob/master/packaging/linux/Arch/PKGBUILD
+# Reference: https://wiki.archlinux.org/title/PKGBUILD
+
+VERSION=${VERSION:-5.9}
+arch=('any')
+pkgname='zsh'
+pkgdesc="zsh shell, bundled with oh-my-zsh"
+pkgrel=1
+pkgver=$VERSION
+echo ${pkgver}
+
+package() {
+    echo $PWD
+
+    tar xvf ../zsh.txz -C $pkgdir
+    
+    # --- ohmyzsh
+    # tar -cf - ./userdata | xz -9ze -T0 > ../ohmyzsh-master.tar.xz 
+    tar xvf ../ohmyzsh-master.tar.xz
+
+    # --- .zshrc
+    cp ../.zshrc userdata/system
+
+}
