@@ -8,7 +8,6 @@ for dir in "${packages[@]}"; do
     makepkg --config ../makepkg.conf -A --skipinteg --skipchecksums # -p PKGBUILD
     # makepkg --cleanbuild -f --clean
     popd
-    mv $dir/*.zst repo
     rm -rf $dir/pkg $dir/src
 done
 
