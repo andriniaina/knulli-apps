@@ -2,6 +2,7 @@ exec = /bin/bash
 date
 .INSTALL_START
     echo "Installing..."
+    /userdata/system/trimui_sharp_fn/trimui_sharp_fn install
 .INSTALL_END
 .UNINSTALL_START
     echo "UnInstalling..."

@@ -19,9 +19,8 @@ package() {
     tar xvf ../trimui_sharp_fn.tar.xz -C $pkgdir/userdata/system/trimui_sharp_fn
 
     # --- trimui_sharp_fn.sh
-    # deadlock
-    #mkdir -p $pkgdir/userdata/roms/tools
-    #cp ../trimui_sharp_fn.sh $pkgdir/userdata/roms/tools
+    mkdir -p $pkgdir/userdata/roms/tools
+    cp ../trimui_sharp_fn.sh $pkgdir/userdata/roms/tools
 
     # --- .BATOEXEC
     mkdir -p $pkgdir/userdata/system/pacman/batoexec
