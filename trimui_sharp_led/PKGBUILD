@@ -10,9 +10,10 @@ pkgver=$VERSION
 echo ${pkgver}
 
 package() {
-    echo $PWD
+    echo $PWD       # possibly srcpkg
+
     # --- binaries
-    cp -R ../files/* $pkgdir
+    cp -R ../release/* $pkgdir
     
     # --- .BATOEXEC
     mkdir -p $pkgdir/userdata/system/pacman/batoexec

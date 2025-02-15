@@ -15,10 +15,10 @@ package() {
     echo $PWD
 
     # --- binaries
-    mkdir -p $pkgdir/userdata/system/trimui_sharp_fn
-    tar xvf ../trimui_sharp_fn.tar.xz -C $pkgdir/userdata/system/trimui_sharp_fn
+    ls -latr ../release
+    cp -R ../release/* $pkgdir
 
-    # --- trimui_sharp_fn.sh
+    # --- trimui_sharp_fn.sh launcher in tools
     mkdir -p $pkgdir/userdata/roms/tools
     cp ../tools_trimui_sharp_fn.sh $pkgdir/userdata/roms/tools
 
