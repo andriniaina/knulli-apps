@@ -12,9 +12,8 @@ date
     batocera-services stop   rgb_led
 
     batocera-services enable  trimui_sharp_led
-    batocera-services start  trimui_sharp_led
-
-    reboot
+    #nohup batocera-services start  trimui_sharp_led & disown ;    echo "stupid batoexec inline shit"
+    #exit 0
 
 .INSTALL_END
 .UNINSTALL_START

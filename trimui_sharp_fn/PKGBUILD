@@ -20,7 +20,7 @@ package() {
 
     # --- trimui_sharp_fn.sh
     mkdir -p $pkgdir/userdata/roms/tools
-    cp ../trimui_sharp_fn.sh $pkgdir/userdata/roms/tools
+    cp ../tools_trimui_sharp_fn.sh $pkgdir/userdata/roms/tools
 
     # --- .BATOEXEC
     mkdir -p $pkgdir/userdata/system/pacman/batoexec
