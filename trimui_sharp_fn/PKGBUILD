@@ -1,0 +1,28 @@
+# Edit on github: https://github.com/LizardByte/Sunshine/blob/master/packaging/linux/Arch/PKGBUILD
+# Reference: https://wiki.archlinux.org/title/PKGBUILD
+
+VERSION=${VERSION:-0.1}
+arch=('any')
+pkgname='trimui_sharp_fn'
+pkgdesc="UI for trimui_sharp_fn (for now)"
+pkgrel=1
+pkgver=$VERSION
+echo ${pkgver}
+
+package() {
+    echo $PWD
+
+    # --- binaries
+    mkdir -p $pkgdir/userdata/system/trimui_sharp_fn
+    tar xvf ../trimui_sharp_fn.tar.xz -C $pkgdir/userdata/system/trimui_sharp_fn
+
+    # --- trimui_sharp_fn.sh
+    # deadlock
+    #mkdir -p $pkgdir/userdata/roms/tools
+    #cp ../trimui_sharp_fn.sh $pkgdir/userdata/roms/tools
+
+    # --- .BATOEXEC
+    mkdir -p $pkgdir/userdata/system/pacman/batoexec
+    cp ../.BATOEXEC $pkgdir/userdata/system/pacman/batoexec/$pkgname
+
+}

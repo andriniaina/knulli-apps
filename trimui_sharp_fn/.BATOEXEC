@@ -1,0 +1,8 @@
+exec = /bin/bash
+date
+.INSTALL_START
+    echo "Installing..."
+.INSTALL_END
+.UNINSTALL_START
+    echo "UnInstalling..."
+.UNINSTALL_END

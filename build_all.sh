@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 rm -rf repo
 docker run -it -v $PWD:/pkg  -e SYNC_DATABASE=1 whynothugo/makepkg bash -c ./build_local.sh

@@ -16,7 +16,7 @@ package() {
     
     # --- .BATOEXEC
     mkdir -p $pkgdir/userdata/system/pacman/batoexec
-    cp ../.BATOEXEC $pkgdir/userdata/system/pacman/batoexec/BATOEXEC
+    cp ../.BATOEXEC $pkgdir/userdata/system/pacman/batoexec/$pkgname
 
     ls -latr
 }
