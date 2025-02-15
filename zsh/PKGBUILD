@@ -4,7 +4,7 @@
 VERSION=${VERSION:-5.9}
 arch=('any')
 pkgname='zsh'
-pkgdesc="zsh shell, bundled with oh-my-zsh"
+pkgdesc="zsh + oh-my-zsh"
 pkgrel=1
 pkgver=$VERSION
 echo ${pkgver}

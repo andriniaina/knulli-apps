@@ -4,7 +4,7 @@
 VERSION=${VERSION:-0.1}
 arch=('any')
 pkgname='trimui_sharp_fn'
-pkgdesc="UI for trimui_sharp_fn (for now)"
+pkgdesc="config UI for trimui_sharp_led (for now)"
 pkgrel=1
 pkgver=$VERSION
 echo ${pkgver}

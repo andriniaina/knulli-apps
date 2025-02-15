@@ -4,7 +4,7 @@
 VERSION=${VERSION:-5.8}
 arch=('any')
 pkgname='zsh-static'
-pkgdesc="zsh shell, portable (static compilation), completion doesn't work as good as the other one, but persists after a reboot"
+pkgdesc="zsh-static (installed in /userdata)"
 pkgrel=1
 pkgver=$VERSION
 install=.install

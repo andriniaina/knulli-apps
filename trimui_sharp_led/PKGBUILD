@@ -4,7 +4,7 @@
 VERSION=${VERSION:-1.0}
 arch=('any')
 pkgname='trimui_sharp_led'
-pkgdesc="a LED controller for Trimui Smart Pro, focused on performance"
+pkgdesc="trimui_sharp_led, a LED controller for Trimui Smart Pro, focused on performance"
 pkgrel=1
 pkgver=$VERSION
 echo ${pkgver}
