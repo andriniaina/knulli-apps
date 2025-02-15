@@ -11,6 +11,12 @@ echo ${pkgver}
 
 package() {
     echo $PWD
+    # --- binaries
     cp -R ../files/* $pkgdir
+    
+    # --- .BATOEXEC
+    mkdir -p $pkgdir/userdata/system/pacman/batoexec
+    cp ../.BATOEXEC $pkgdir/userdata/system/pacman/batoexec/BATOEXEC
+
     ls -latr
 }

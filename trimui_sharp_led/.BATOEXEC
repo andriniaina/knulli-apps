@@ -1,0 +1,23 @@
+exec = /bin/bash
+date
+.INSTALL_START
+    echo "Installing..."
+        
+    batocera-services disable analog_stick_led
+    batocera-services disable ledspicer
+    batocera-services disable rgb_led
+
+    batocera-services stop   analog_stick_led
+    batocera-services stop   ledspicer
+    batocera-services stop   rgb_led
+
+    batocera-services enable  trimui_sharp_led
+    batocera-services start  trimui_sharp_led
+
+    reboot
+
+.INSTALL_END
+.UNINSTALL_START
+    batocera-services stop    trimui_sharp_led
+    batocera-services disable trimui_sharp_led
+.UNINSTALL_END
