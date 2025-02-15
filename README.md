@@ -6,9 +6,9 @@ This is a repository of ready-to-install Knulli Linux apps/packages
 Add the following code snippet to your `/userdata/system/pacman/pacman.conf` (create the file if it does not exist):
 
 ```conf
-[knulli-pacman-repo]
+[knulli-apps]
 SigLevel = Optional
-Server = https://github.com/andriniaina/knulli-pacman-repo/releases/latest/download
+Server = https://github.com/andriniaina/knulli-apps/releases/latest/download
 ```
 
 And then run `pacman -Sy`
@@ -24,7 +24,7 @@ go to Knulli EmulationstationMenu *> Updates & Downloads > Content Downloader*
 
 ```bash
 # List repo packages:
-pacman -Sl knulli-pacman-repo
+pacman -Sl knulli-apps
 # Install a package:
 pacman -S <package-name>
 ```

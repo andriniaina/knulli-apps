@@ -13,6 +13,6 @@ done
 
 # ------------------ rebuild database
 cd repo
-repo-add knulli-pacman-repo.db.tar.xz *zst
+repo-add knulli-apps.db.tar.xz *zst
 
 rm *.old -f
