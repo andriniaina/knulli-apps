@@ -2,8 +2,10 @@ exec = /bin/bash
 date
 .INSTALL_START
     echo "Installing..."
-    /userdata/system/trimui_sharp_fn/trimui_sharp_fn install
+    ln /userdata/system/trimui_sharp_fn/trimui_sharp_fn.sh /userdata/roms/tools/trimui_sharp_fn.sh
+       /userdata/system/trimui_sharp_fn/trimui_sharp_fn.sh install
 .INSTALL_END
 .UNINSTALL_START
     echo "UnInstalling..."
+    rm /userdata/roms/tools/trimui_sharp_fn.sh
 .UNINSTALL_END

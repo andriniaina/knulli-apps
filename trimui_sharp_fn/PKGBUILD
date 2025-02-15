@@ -5,7 +5,7 @@ VERSION=${VERSION:-0.1}
 arch=('any')
 pkgname='trimui_sharp_fn'
 pkgdesc="config UI for trimui_sharp_led (for now)"
-pkgrel=4
+pkgrel=5
 pkgver=$VERSION
 echo ${pkgver}
 
@@ -17,10 +17,6 @@ package() {
     # --- binaries
     ls -latr ../release
     cp -R ../release/* $pkgdir
-
-    # --- trimui_sharp_fn.sh launcher in tools
-    mkdir -p $pkgdir/userdata/roms/tools
-    cp ../tools_trimui_sharp_fn.sh $pkgdir/userdata/roms/tools
 
     # --- .BATOEXEC
     mkdir -p $pkgdir/userdata/system/pacman/batoexec
