@@ -1,3 +1,4 @@
+export ZSH_DISABLE_COMPFIX=true
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -71,7 +72,6 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=()
-fpath=($fpath ~/zsh/share/zsh/5.8/functions)
 
 source $ZSH/oh-my-zsh.sh
 

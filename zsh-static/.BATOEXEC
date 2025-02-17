@@ -2,10 +2,12 @@ exec = /bin/bash
 date
 .INSTALL_START
     echo "Installing..."
-        
-    echo 'export PATH="/userdata/system/zsh/bin:$PATH"' >> ~/.bashrc
-    chown $(whoami) /userdata/system/.oh-my-zsh/cache
-    chown $(whoami) /userdata/system/.oh-my-zsh/custom
+
+    curl -fsSL https://raw.githubusercontent.com/romkatv/zsh-bin/master/install > /var/run/zsh-install    
+    chmod +x /var/run/zsh-install
+    /var/run/zsh-install -d /userdata/system/.local/zsh/ -e no
+    echo '' > /userdata/system/.oh-my-zsh/tools/check_for_upgrade.sh
+    echo 'export PATH="/userdata/system/.local/zsh/bin:$PATH"' >> ~/.bash_profile
 
 .INSTALL_END
 .UNINSTALL_START
