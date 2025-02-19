@@ -5,7 +5,7 @@ VERSION=${VERSION:-5.8}
 arch=('any')
 pkgname='zsh-static'
 pkgdesc="zsh (installed in /userdata/system/.local)"
-pkgrel=3
+pkgrel=5
 pkgver=$VERSION
 install=.install
 echo ${pkgver}
@@ -15,6 +15,7 @@ package() {
     # --- ohmyzsh
     # tar -cf - ./userdata | xz -9ze -T0 > ../ohmyzsh-master.tar.xz 
     tar xvf ../ohmyzsh-master.tar.xz
+    tar xvf ../zsh-autosuggestions.tar.xz
 
     # --- .zshrc
     cp ../.zshrc userdata/system
