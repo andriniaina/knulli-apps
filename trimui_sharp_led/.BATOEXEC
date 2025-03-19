@@ -14,9 +14,11 @@ date
     batocera-services enable  trimui_sharp_led
     #nohup batocera-services start  trimui_sharp_led & disown ;    echo "stupid batoexec inline shit"
     #exit 0
+    ln /userdata/system/led/go.sh /userdata/roms/led/trimui_sharp_led.sh 
 
 .INSTALL_END
 .UNINSTALL_START
     batocera-services stop    trimui_sharp_led
     batocera-services disable trimui_sharp_led
+    rm /userdata/roms/tools/trimui_sharp_led.sh
 .UNINSTALL_END

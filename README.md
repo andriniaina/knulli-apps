@@ -3,7 +3,13 @@ This is a repository of ready-to-install Knulli Linux apps/packages
 
 # Repo setup/installation
 
-Add the following code snippet to your `/userdata/system/pacman/pacman.conf` (create the file if it does not exist):
+1. Make sure your system clock is correct:
+```bash
+date -s '2025-03-10 08:25:00'  # change to an accurate date
+hwclock --set --date="now"
+```
+
+2. Add the following code snippet to your `/userdata/system/pacman/pacman.conf` (create the file if it does not exist):
 
 ```conf
 [knulli-apps]
@@ -11,7 +17,7 @@ SigLevel = Optional
 Server = https://github.com/andriniaina/knulli-apps/releases/latest/download
 ```
 
-And then run `pacman -Sy`
+3. And then run `pacman -Sy`
 
 # Packages
 

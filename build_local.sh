@@ -1,6 +1,6 @@
 mkdir repo -p
 
-packages=("zsh" "zsh-static" "trimui_sharp_led" "trimui_sharp_fn")
+packages=("iptv" "zsh" "zsh-static" "trimui_sharp_led" "trimui_sharp_fn")
 
 for dir in "${packages[@]}"; do
     pushd $dir
