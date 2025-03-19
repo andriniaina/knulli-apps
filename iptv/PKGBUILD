@@ -5,7 +5,7 @@ VERSION=${VERSION:-1.0}
 arch=('any')
 pkgname='iptv'
 pkgdesc="iptv, watch TV from across the world on your console"
-pkgrel=3
+pkgrel=4
 pkgver=$VERSION
 echo ${pkgver}
 

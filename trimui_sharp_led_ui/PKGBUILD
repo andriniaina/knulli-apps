@@ -3,13 +3,14 @@
 
 VERSION=${VERSION:-1.0}
 arch=('any')
-pkgname='trimui_sharp_led'
-pkgdesc="trimui_sharp_led, a LED controller for Trimui Smart Pro, focused on performance"
-pkgrel=11
+pkgname='trimui_sharp_led_ui'
+pkgdesc="config UI for trimui_sharp_led"
+pkgrel=4
 pkgver=$VERSION
 echo ${pkgver}
 
 package() {
+    depends=("trimui_sharp_led")
     echo $PWD       # possibly srcpkg
 
     # --- binaries

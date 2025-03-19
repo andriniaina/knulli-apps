@@ -2,7 +2,7 @@ exec = /bin/bash
 date
 .INSTALL_START
     echo "Installing..."
-    echo /userdata/system/iptv/go.sh > /userdata/roms/tools/iptv.sh 
+    eval "echo /userdata/system/iptv/go.sh > /userdata/roms/tools/iptv.sh"
 .INSTALL_END
 .UNINSTALL_START
     echo "UnInstalling..."

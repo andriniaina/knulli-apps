@@ -5,13 +5,11 @@ VERSION=${VERSION:-0.1}
 arch=('any')
 pkgname='trimui_sharp_fn'
 pkgdesc="Use Fn switch key (trimui devices)"
-pkgrel=9
+pkgrel=11
 pkgver=$VERSION
 echo ${pkgver}
 
 package() {
-    depends=("trimui_sharp_led")
-
     echo $PWD
 
     # --- binaries

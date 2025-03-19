@@ -1,0 +1,11 @@
+exec = /bin/bash
+date
+.INSTALL_START
+    eval "echo /userdata/system/led/go.sh > /userdata/roms/tools/trimui_sharp_led.sh"
+
+.INSTALL_END
+.UNINSTALL_START
+    batocera-services stop    trimui_sharp_led
+    batocera-services disable trimui_sharp_led
+    rm /userdata/roms/tools/trimui_sharp_led.sh
+.UNINSTALL_END
