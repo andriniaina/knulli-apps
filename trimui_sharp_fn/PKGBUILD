@@ -4,8 +4,8 @@
 VERSION=${VERSION:-0.1}
 arch=('any')
 pkgname='trimui_sharp_fn'
-pkgdesc="config UI for trimui_sharp_led (for now)"
-pkgrel=7
+pkgdesc="Use Fn switch key (trimui devices)"
+pkgrel=9
 pkgver=$VERSION
 echo ${pkgver}
 

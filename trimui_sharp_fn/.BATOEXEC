@@ -2,7 +2,7 @@ exec = /bin/bash
 date
 .INSTALL_START
     echo "Installing..."
-    ln /userdata/system/fn/go.sh /userdata/roms/tools/FnKey.sh
+    echo /userdata/system/fn/go.sh > /userdata/roms/tools/FnKey.sh
        /userdata/system/fn/go.sh install
 .INSTALL_END
 .UNINSTALL_START

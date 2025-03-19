@@ -3,6 +3,7 @@ This is a repository of ready-to-install Knulli Linux apps/packages
 
 # Repo setup/installation
 
+0. Most of these apps work only on Knulli released after 2025-01
 1. Make sure your system clock is correct:
 ```bash
 date -s '2025-03-10 08:25:00'  # change to an accurate date
